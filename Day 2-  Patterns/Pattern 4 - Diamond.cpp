@@ -1,0 +1,35 @@
+#include<iostream>
+//print center triangle of n lines where n given by user
+using namespace std;
+int main()
+{
+	int i,space,s;
+	char j;
+	for(space=5,i=1;space>=1 && i<=5;space--,i++)//controller
+	{
+		//put spaces on a line
+		for(s=1;s<=space;s++)	
+			cout<<" ";//space
+		//X print
+		for(j=1;j<=i;j++)//printer
+			cout<<" X";	
+		//next line
+		cout<<"\n";
+	}
+	
+	
+	for(space=5,i=1;space>=1 && i<=5;space--,i++)//controller
+	{
+//		//put spaces on a line
+//		for(s=1;s<=space;s++)	
+//			cout<<" ";//space
+		//X print
+		for(j='A';j<=i;j++)//printer
+			cout<<j;	
+		//next line
+		cout<<"\n";
+	}
+
+}
+
+
